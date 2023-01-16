@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Myriad Pro, sans-serif;
+}
+
+        /* gradiente para textos! */
+       .gradient {
+        background-image:linear-gradient(130deg, #737DFE 20%, #FFCAC9 40%);
+        color: black;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+  /* SEGUNDA PARTE DO SITE */
+
+
+  .container {
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
+
+    }
+
+  .container div {
+    justify-content: space-between;
+  }
+
+  .degradepart { /* SEGUNDA PARTE DO SITE - DEGRADE E DEFINIÇÕES DE PROPRIEDADE BG */
+        position: absolute;
+        /* height: 100vh; */
+        width: 100%;
+        top: 100%;
+        left: -1px;
+        background-image: linear-gradient(130deg, #737DFE 20%, #FFCAC9 50%);
+        min-height: 100%;
+        }
+    
+    
+       .divtexto {
+      height: 70%;
+      max-height: 70%;
+      max-width: 40%;
+      font-size: 80%;
+      padding: 50px;
+      margin: 15px;
+      background-color: white;
+      text-align: center;
+      box-shadow: 6px 6px 4px;  /* mandar sombra pra esq | mandar a sombra pra baixo | sombra esfumada*/
+    
+       } 
+
+       .divtexto img {
+          width: 100%;
+
+       }
+
+ footer {
+
+        position: absolute;
+        top: 200%; 
+        background-color: #f0f0f0;
+        width: 100%;
+       }
+
+  p {
+
+    font-size: 18px;
+    margin: 6%;
+    text-align: center;
+
+  }
+
+  mark {
+    background-color: LightPink;
+  }
+
+
+body {
+
+ background: url("bg.jpg") repeat;
+  height: 200vh; 
+}
+
+
+.left {
+  background-color: whitesmoke;
+  position: absolute;
+  width: 26%;
+  height: 80%;
+  top: 6%;
+  left: 10%;
+}
+
+
+main {
+  margin: auto;
+ /* border: 2px solid; */
+  border-color: blueviolet;
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 30%;
+  margin-right: 23%;
+  font-size: 24px;
+  min-height: 320px;
+  max-height: 800px;
+
+    }
+
+a { /* Personalização da navbar, texto dos links  */
+  color: #fff; 
+  text-decoration: none;
+  transition: 0.3s;
+ font-weight: bold; 
+  font-variant-caps: all-petite-caps;
+  font-size: 3.2vh;   /* vh pra não ficar modificando  */
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  font-size: 3.9vh;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(139deg, #737DFE 20%, #FFCAC9 50%);
+  height: 8vh;
+  }
+
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 2px;
+  margin-left: 50px;
+  }
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div { /* indica o design daquele icon abre o menu mobile */
+  width: 30px; 
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.2s;
+}
+
+@media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+
+  }
+
+
+  .nav-list { /* a lista dos links que abre no menu mobile ok */
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 30vw;
+    height: 45vh;
+    background-image: linear-gradient(155deg, #737DFE 20%, #FFCAC9 50%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  #titulo-pagina{
+  text-align: center;
+  font-size: 3vh;
+  }
+
+}
+
+
+
+
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+      @keyframes navLinkFade {
+        from {
+          opacity: 0;
+          transform: translateX(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+      }
+
+      .mobile-menu.active .line2 {
+        opacity: 0;
+      }
+
+      .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+      }
+
+      
+
+ 
+
+/* botão */
+
+ .botao {
+    background-color: #dbb6d7;
+    position: absolute;
+    border: none;
+    color: white;
+    left: 32%;
+    padding: 4% 6%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+  }
+
+  .botao1 {
+    background-color: #7880fc; 
+    color: white; 
+    /*border: 2px solid #dbb6d7;*/
+    border-radius: 18px;
+  }
+
+  .botao1:hover {
+    background-color: #dbb6d7;
+    color: black; }
+
