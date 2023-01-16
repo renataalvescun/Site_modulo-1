@@ -5,6 +5,9 @@
 Esse foi um projeto onde eu aprendi a entender melhor como funciona a HTML, CSS e um pouco de JS. Primeiro, foi feito uma base simples de HTML e apenas posteriomente adicionado estilo e responsabilidade. Embora ele não esteja 100%, indica algumas coisas que aprendi.
 <p>
 </div>
+
+> Verifique no endereço: https://renataalvescun.github.io/Site_modulo-1
+
 <div align="center">
   <img height="200em" src="https://user-images.githubusercontent.com/100436812/198044637-a2783a41-cee8-414c-abeb-10da77f64b20.gif">
  </div>
